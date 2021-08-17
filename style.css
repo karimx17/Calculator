@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #ADD8E6, #fff);
+}
+.calculator  {
+    max-width: 400px;
+    margin: 100px auto;
+    border: 2px solid #111;
+    border-radius: 5px;
+  }
+
+  button {
+    background: rgba(0, 0, 0, 0.5); /* light background with opacity 50% */
+    border: 1px solid #111; /* black border */
+    padding: 20px;
+    color: #EEE; /* white text */
+    border-radius: 5px; /* rounded corners */
+    font-size: 22px; /* larger fonts */
+    cursor: pointer; /* make it look clickable */
+  }
+
+.previousInput   {
+    /* reset basic form styles */
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    width: 95%;
+    color: #696969	;
+    text-align: right;
+    font-size: 1.5rem;
+    border-radius: 0;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  .currentInput { 
+        /* reset basic form styles */
+        background: none;
+        border: none;
+        box-shadow: none;
+        outline: none;
+        width: 100%;
+        border-bottom: 2px solid #111;
+        color: #333;
+        text-align: right;
+        font-size: 2.5rem;
+        border-radius: 0;
+        word-wrap: break-word;
+        word-break: break-all; 
+  }
+
+  .buttons {
+    /* small spacing within our container */
+    padding: 20px;
+  
+    /* the grid stuff! */
+    display: grid;
+  
+    /* create 4 columns */
+    grid-template-columns: repeat(4, 1fr);
+
+      /* add the grid gap */
+    grid-gap: 15px;
+
+}
+/* span across 3 columns */
+.equal,
+.clear   {
+  grid-column: span 2;
+}
+
+/* go blue */
+.clear   {
+  background: #3572DB;
+}
+
+.equal {
+    background: #28D060;
+  }
